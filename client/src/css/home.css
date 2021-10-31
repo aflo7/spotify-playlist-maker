@@ -1,0 +1,68 @@
+#genres {
+  width: fit-content;
+  height: 100%;
+  font-size: 12pt;
+  margin: 5px;
+
+}
+
+.genre-select-wrapper {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: lightgreen;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 12pt;
+  border-radius: 10px;
+}
+
+.song-wrapper {
+  font-size: 10pt;
+  font-weight: bold;
+  padding: 20px;
+  background-color: tan;
+  border: 5px solid black;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.song-wrapper:hover {
+  background-color: white;
+
+}
+
+.create-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.genre-text {
+  margin: 5px;
+  font-size: 12pt;
+}
+
+.add-to-library-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+.add-to-library-btn {
+  background-color: lightgreen;
+  cursor: pointer;
+  border: none;
+  height: 100%;
+  margin-left: 5px;
+}
+
+.add-to-library-btn:hover {
+  background-color: rgb(80, 247, 80);
+
+}

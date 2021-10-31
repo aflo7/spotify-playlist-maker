@@ -1,0 +1,50 @@
+.track-name {
+padding: 2px;
+}
+
+.artist-name {
+  padding: 2px;
+
+}
+
+.album-name {
+  padding: 2px;
+}
+
+.album-cover {
+  height: 200px;
+  width: 200px;
+}
+
+.track-wrapper {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 450px;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+.track-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: tan;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.playlist-wrapper {
+  
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 10pt;
+}
