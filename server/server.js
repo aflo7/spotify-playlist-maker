@@ -2,6 +2,9 @@ const express = require("express")
 const SpotifyWebApi = require("spotify-web-api-node")
 const cors = require("cors")
 const bodyParser = require("body-parser")
+const path = require('path');
+
+
 
 const credentials = {
   redirectUri: "http://localhost:3000/",
@@ -9,9 +12,13 @@ const credentials = {
   clientSecret: "dbdb3da3dac34a1ea0fe694a66dc32bd"
 }
 
+const PORT = process.env.PORT || 3001;
+
 const app = express()
 app.use(cors())
 app.use(bodyParser.json())
+
+app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.post("/login", (req, res) => {
   const spotifyApi = new SpotifyWebApi(credentials)
@@ -32,4 +39,10 @@ app.post("/login", (req, res) => {
 
 })
 
-app.listen(3001)
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
+});

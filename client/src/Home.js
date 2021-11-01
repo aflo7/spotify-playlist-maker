@@ -8,7 +8,6 @@ const spotifyApi = new SpotifyWebApi()
 
 const Home = ({ code }) => {
   const [genres, setGenres] = useState()
-  const [genreOutput, setGenreOutput] = useState([])
   const accessToken = useAuth(code)
   const [searchResults] = useState([])
   const [currGenre, setCurrGenre] = useState("acoustic")

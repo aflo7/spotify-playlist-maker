@@ -6,7 +6,11 @@
   "scripts": {
     "devStart": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "engines": {
+    "node": "16.5.0"
   },
   "keywords": [],
   "author": "",
